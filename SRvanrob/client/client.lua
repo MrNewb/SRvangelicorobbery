@@ -1,9 +1,6 @@
 local holdingup = false
-local store = ""
-local blipRobbery = nil
-
 ESX = nil
-
+PlayerData = {}
 Citizen.CreateThread(function()
 	while ESX == nil do
 		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
